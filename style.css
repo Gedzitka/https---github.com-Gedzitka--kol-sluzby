@@ -6,6 +6,10 @@ html { box-sizing: border-box; }
 body {
     background-color: #FAFAFA;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: gray;
+
+
 
 }
 h1 {
@@ -15,6 +19,7 @@ h1 {
      text-decoration: underline blue;
      text-align: center;
      margin:0;  
+     color:black;
 }
 h2 {
     color: black;
@@ -78,4 +83,31 @@ padding: 11px 30px;
 border: none;
 border-radius: 20px;
 color: white;
+}
+.mapa, .kaktus,.palma,.letadlo,.slunecnik, .karavan
+{
+    display:;
+  
+    
+
+}
+.box1, .box2,.box3,.box4,.box5,.box6,.box7 
+{
+background-color: white;
+width: 460px;
+border-radius: 10px;
+box-shadow: 0px 4px 6px #407BFF1F;
+margin: 35px auto;
+display: flex;
+text-align: left;
+
+
+
+}
+
+.text1,.text2,.text3,.text4,.text7
+{
+display:flex;
+margin: 32px 20px 20px 10px;
+
 }
