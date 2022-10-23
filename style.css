@@ -15,11 +15,17 @@ body {
 h1 {
     font-size: 28px;
      font-weight:bold;
-     text-decoration-skip-ink: none;
-     text-decoration: underline blue;
+    
      text-align: center;
      margin:0;  
      color:black;
+}
+hr {
+    margin-top: 10px;
+    width: 60px;
+    height: 2px;
+    border-color: #407BFF;
+   
 }
 h2 {
     color: black;
