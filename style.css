@@ -55,7 +55,7 @@ padding-block-end: 57px;
 .kancelar,.delegati {
     text-align: center;
     color: #8B8B8B;
-    width: 460px;
+    max-width: 460px;
     margin: 15px auto;
     line-height: 21px;
     
@@ -105,7 +105,7 @@ color: white;
 .box1, .box2,.box3,.box4,.box5,.box6,.box7 
 {
 background-color: white;
-width: 460px;
+max-width: 460px;
 border-radius: 10px;
 box-shadow: 0px 4px 6px #407BFF1F;
 margin: 15px auto;
@@ -139,13 +139,31 @@ display:flex;
     margin:30px 160px;
 }
 .dobrodruzstvi,.pohoda {
-    flex: 0 1 auto;
+    flex: 1 1 auto;
    margin:30px auto;
    
 
-   }   
+   }
+.boxy1,.boxy2{
+    display: flex;
+
+}   
+.box1, .box2,.box3,.box4,.box5,.box6,.box7 {
+    flex:0 1 auto;
+    width: 230px;
+    flex-direction: column;
+}
+.mapa, .kaktus,.palma,.letadlo,.slunecnik, .karavan {
+    margin: auto;
+    margin-top: 30px;
+    
+   
+}
+.text1,.text2,.text3,.text4,.text7 {
+    margin: 0;
+   
+}
   
    }
 
   
-}
