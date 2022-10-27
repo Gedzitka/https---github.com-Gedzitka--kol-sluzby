@@ -22,7 +22,7 @@ h1 {
 }
 hr {
     margin-top: 10px;
-    width: 60px;
+    width: 10%;
     height: 2px;
     border-color: #407BFF;
    
@@ -34,15 +34,6 @@ h2 {
     font-weight: bold;
 }
 
-.kontejner{
-width: 500px ;
-margin: 150px auto;
-border:3px ;
-height: auto;
-box-shadow: 0 0 1px 0px gray;
-opacity: 1;
-padding-block-end: 57px;
-}
 .cestovatel {
     width: 350px;
     height: auto ;
@@ -52,49 +43,58 @@ padding-block-end: 57px;
     display: block;
     
 }
+.onas{
+    margin: 30px 20px;
+
+}
+
 .kancelar,.delegati {
     text-align: center;
     color: #8B8B8B;
-    max-width: 460px;
-    margin: 15px auto;
+    margin: auto;
     line-height: 21px;
     
     
 }
 .talcitka {
     display: block;
+    
+ 
 }
 .dobrodruzstvi{
-height: 40px;
-margin: 40px auto;
+display: block;
+margin:auto;
+height: auto;
 margin-bottom: 0;
 font-size: 14px;
-display: block;
+flex:0 0 calc( ( 100%-20px ) / 2 );
 font-family: 'Montserrat',sans-serif;
 background-color: #407BFF;
 padding: 11px 30px;
-text-align: justify;
+text-align: center;
 border: none;
 border-radius: 20px;
 color: white;
 
 }
 .pohoda {
-
-margin:10px auto;
-margin-bottom: 70px;
-height: 40px;
 display: block;
-font-size: 14px;
-font-family: 'Montserrat',sans-serif;
-
-background-color: #8B8B8B;
-padding: 11px 30px;
-border: none;
-border-radius: 20px;
-color: white;
-}
-.mapa, .kaktus,.palma,.letadlo,.slunecnik, .karavan
+    margin: auto;
+    
+    height: auto;
+   
+    font-size: 14px;
+    font-family: 'Montserrat',sans-serif;
+    flex:0 0 calc((100%-20px) / 2);
+    background-color: #8B8B8B;
+    padding: 11px 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    }
+    
+    .map
+a, .kaktus,.palma,.letadlo,.slunecnik, .karavan
 {
     display:flex;
     margin: 20px;
@@ -105,7 +105,7 @@ color: white;
 .box1, .box2,.box3,.box4,.box5,.box6,.box7 
 {
 background-color: white;
-max-width: 460px;
+max-width: 92%;
 border-radius: 10px;
 box-shadow: 0px 4px 6px #407BFF1F;
 margin: 15px auto;
@@ -129,30 +129,51 @@ margin: 31px auto;font-size: 13px; font-weight: lighter
 }
 @media screen  and (min-width: 640px){
     .kancelar,.delegati {
-        width: 550px;
+        width: 72%;
     }
-.kontejner {
-    width: 768px;
-    
-}
-.tlacitka {
-    display: flex;
-    margin:30px 160px;
-}
-.dobrodruzstvi,.pohoda {
-    flex: 1 1 auto;
-   margin:30px auto;
-   margin-right: 10px;
-   
 
+    
+.tlacitka {
+   
+    display: grid;
+    grid-template-columns: 19% 24% 29% ;
+    
+    gap: 0 3%;
+    
+   
+}
+/* Pozadí,písmo,nadpis */
+
+
+   .dobrodruzstvi {
+    margin: 0;
+    grid-column:  2/3 ;
+    
+
+  
+ 
    }
+  
+   
+   .pohoda {
+    margin: 0;
+    grid-column:3/4
+    
+    }
+ 
+  
+   
+  
+
+
 .boxy1,.boxy2{
     display: flex;
+    
 
 }   
 .box1, .box2,.box3,.box4,.box5,.box6,.box7 {
     flex:0 1 auto;
-    width: 230px;
+    min-width: 30%;
     flex-direction: column;
 }
 .mapa, .kaktus,.palma,.letadlo,.slunecnik, .karavan {
@@ -166,7 +187,18 @@ margin: 31px auto;font-size: 13px; font-weight: lighter
     margin: 20px 16px;
    
 }
-  
-   }
 
+  
+}
+   
+   @media screen  and (min-width: 1100px){
+    .kontejner{
+        
+        display: flex;
+    
+    }
+.Travels{
+    flex: 1 1 auto;
+}
+   }
   
