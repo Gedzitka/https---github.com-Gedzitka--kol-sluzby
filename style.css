@@ -197,10 +197,36 @@ margin: 31px auto;font-size: 13px; font-weight: lighter
     .kontejner{
         
         display: flex;
+        flex-wrap:wrap ;
     
     }
 .Travels{
-    flex: 1 1 auto;
+    margin-top:133px ;
+    
+    flex: 0 1 50%;
+    order: 1;
+}
+.cestovatel {
+    flex:1 1 30%;
+    order: 2;
+    width: 35%;
+    height: auto;
+    padding: 0;
+
+}
+.boxy1 {
+    flex:1 1 50%;
+    order: 3;
+}
+.kancelar {
+    flex:1 1 30%;
+    order: 4;
+}
+.delegati { flex:1 1 30%;
+    order: 5;}
+.boxy2 {
+    flex:1 1 50%;
+    order: 6; 
 }
    }
   
