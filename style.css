@@ -58,16 +58,18 @@ h2 {
 }
 .talcitka {
     display: block;
-    
  
 }
 .dobrodruzstvi{
-display: block;
-margin:auto;
+   
+
+    margin: auto;
+    height: auto;
+    display: block;
 height: auto;
 margin-bottom: 0;
 font-size: 14px;
-flex:0 0 calc( ( 100%-20px ) / 2 );
+
 font-family: 'Montserrat',sans-serif;
 background-color: #407BFF;
 padding: 11px 30px;
@@ -78,14 +80,14 @@ color: white;
 
 }
 .pohoda {
+  margin: 11px auto;
+  margin-block-end: 60px;
+height: auto;
 display: block;
-    margin: auto;
-    
-    height: auto;
    
     font-size: 14px;
     font-family: 'Montserrat',sans-serif;
-    flex:0 0 calc((100%-20px) / 2);
+    
     background-color: #8B8B8B;
     padding: 11px 30px;
     border: none;
@@ -93,17 +95,17 @@ display: block;
     color: white;
     }
     
-    .map
-a, .kaktus,.palma,.letadlo,.slunecnik, .karavan
+    .mapa, .kaktus,.palma,.letadlo,.slunecnik, .karavan
 {
     display:flex;
     margin: 20px;
+    }
   
     
 
-}
-.box1, .box2,.box3,.box4,.box5,.box6,.box7 
-{
+
+.box1, .box2,.box3,.box4,.box5,.box6 {
+
 background-color: white;
 max-width: 92%;
 border-radius: 10px;
@@ -119,7 +121,7 @@ text-align: center;
 
 }
 
-.text1,.text2,.text3,.text4,.text7
+.text1,.text2,.text3,.text4,.text5,.text6
 {
 display:flex;
 margin: 31px auto;font-size: 13px; font-weight: lighter
