@@ -32,6 +32,7 @@ h2 {
     font-size: 16px;
     text-align: center;
     font-weight: bold;
+    margin-top: 80px;
 }
 
 .cestovatel {
@@ -56,10 +57,12 @@ h2 {
     
     
 }
-.talcitka {
+
+.tlacitka{
     display: block;
- 
+   
 }
+
 .dobrodruzstvi{
    
 
@@ -80,25 +83,32 @@ color: white;
 
 }
 .pohoda {
-  margin: 11px auto;
-  margin-block-end: 60px;
-height: auto;
-display: block;
-   
-    font-size: 14px;
-    font-family: 'Montserrat',sans-serif;
-    
-    background-color: #8B8B8B;
-    padding: 11px 30px;
-    border: none;
-    border-radius: 20px;
-    color: white;
+    margin: 11px auto;
+    margin-block-end: 60px;
+  height: auto;
+  display: block;
+     
+      font-size: 14px;
+      font-family: 'Montserrat',sans-serif;
+      
+      background-color: #8B8B8B;
+      padding: 11px 30px;
+      border: none;
+      border-radius: 20px;
+      color: white;
     }
     
+    
+    
+        
+
     .mapa, .kaktus,.palma,.letadlo,.slunecnik, .karavan
 {
     display:flex;
-    margin: 20px;
+    margin: 20px ;
+
+  
+    
     }
   
     
@@ -106,13 +116,15 @@ display: block;
 
 .box1, .box2,.box3,.box4,.box5,.box6 {
 
-background-color: white;
-max-width: 92%;
-border-radius: 10px;
-box-shadow: 0px 4px 6px #407BFF1F;
-margin: 15px auto;
-display: flex;
-text-align: center;
+    background-color: white;
+    max-width: 92%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    margin: 15px auto;
+    flex: 1 1 calc(100%/3);
+    text-align: center;
+    display: flex;
+    
 
 
 
@@ -124,7 +136,7 @@ text-align: center;
 .text1,.text2,.text3,.text4,.text5,.text6
 {
 display:flex;
-margin: 31px auto;font-size: 13px; font-weight: lighter
+margin: 31px auto;font-size: 13px; font-weight: lighter; text-align: center;
 
 
 
@@ -170,13 +182,14 @@ margin: 31px auto;font-size: 13px; font-weight: lighter
 
 .boxy1,.boxy2{
     display: flex;
-    
+  justify-content: space-around;  
 
 }   
 .box1, .box2,.box3,.box4,.box5,.box6,.box7 {
-    flex:0 1 auto;
+    flex:0 0 calc((100%-18px)/3);
     min-width: 30%;
     flex-direction: column;
+    
 }
 .mapa, .kaktus,.palma,.letadlo,.slunecnik, .karavan {
     margin: auto;
@@ -198,6 +211,7 @@ margin: 31px auto;font-size: 13px; font-weight: lighter
         
         display: flex;
         flex-wrap:wrap ;
+        padding:60px 80px;
     
     }
 .Travels{
@@ -205,28 +219,59 @@ margin: 31px auto;font-size: 13px; font-weight: lighter
     
     flex: 0 1 50%;
     order: 1;
+    text-align: left;
 }
+
+.dobrodruzstvi {
+    width:auto;
+   
+    
+
+  
+ 
+   }
+  .tlacitka {
+    display: flex;
+  }
+   
+   .pohoda {
+   width:auto ;
+    
+    }
 .cestovatel {
     flex:1 1 30%;
     order: 2;
     width: 35%;
     height: auto;
     padding: 0;
+    margin-top: 60px;
 
 }
 .boxy1 {
     flex:1 1 50%;
     order: 3;
+    margin-top: 147px;
+   
 }
 .kancelar {
     flex:1 1 30%;
     order: 4;
+    text-align: left;
+    margin-left: 40px;
+    
 }
 .delegati { flex:1 1 30%;
-    order: 5;}
+    order: 5;
+    text-align: left;
+    margin-right: 40px;
+    margin-top: 119px;
+}
+h2 {margin:0;}
 .boxy2 {
     flex:1 1 50%;
     order: 6; 
 }
+.box1, .box2,.box3,.box4,.box5,.box6,.box7 {
+margin-right: 20px;
    }
-  
+  }
