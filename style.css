@@ -1,17 +1,18 @@
-/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
 /* Pozadí,písmo,nadpis */
+
 body {
     background-color: #FAFAFA;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: gray;
-
-
-
+    color: gray; 
 }
+
+/* Nadpisy */
+
 h1 {
     font-size: 28px;
      font-weight:bold;
@@ -20,6 +21,7 @@ h1 {
      margin:0;  
      color:black;
 }
+
 hr {
     margin-top: 10px;
     width: 10%;
@@ -27,6 +29,7 @@ hr {
     border-color: #407BFF;
    
 }
+
 h2 {
     color: black;
     font-size: 16px;
@@ -34,6 +37,8 @@ h2 {
     font-weight: bold;
     margin-top: 80px;
 }
+
+/* Hlavní obrázek */
 
 .cestovatel {
     width: 350px;
@@ -46,64 +51,57 @@ h2 {
 }
 .onas{
     margin: 30px 20px;
-
 }
+
+/* Popis služeb */
 
 .kancelar,.delegati {
     text-align: center;
     color: #8B8B8B;
     margin: auto;
     line-height: 21px;
-    
-    
 }
+
+/* Tlačítka*/
 
 .tlacitka{
     display: block;
-   
 }
 
 .dobrodruzstvi{
    
-
     margin: auto;
     height: auto;
     display: block;
-height: auto;
-margin-bottom: 0;
-font-size: 14px;
-
-font-family: 'Montserrat',sans-serif;
-background-color: #407BFF;
-padding: 11px 30px;
-text-align: center;
-border: none;
-border-radius: 20px;
-color: white;
+    height: auto;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-family: 'Montserrat',sans-serif;
+    background-color: #407BFF;
+    padding: 11px 30px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    color: white;
 
 }
 .pohoda {
     margin: 11px auto;
     margin-block-end: 60px;
-  height: auto;
-  display: block;
-     
-      font-size: 14px;
-      font-family: 'Montserrat',sans-serif;
-      
-      background-color: #8B8B8B;
-      padding: 11px 30px;
-      border: none;
-      border-radius: 20px;
-      color: white;
+    height: auto;
+    display: block;
+    font-size: 14px;
+    font-family: 'Montserrat',sans-serif;
+    background-color: #8B8B8B;
+    padding: 11px 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
     }
-    
-    
-    
-        
+     
+ /* Ikony*/   
 
-    .mapa, .kaktus,.palma,.letadlo,.slunecnik, .karavan
-{
+.ikony {
     display:flex;
     margin: 20px ;
 
@@ -112,9 +110,9 @@ color: white;
     }
   
     
+/* boxy */
 
-
-.box1, .box2,.box3,.box4,.box5,.box6 {
+.box {
 
     background-color: white;
     max-width: 92%;
@@ -124,96 +122,87 @@ color: white;
     flex: 1 1 calc(100%/3);
     text-align: center;
     display: flex;
-    
-
-
-
-
-
-
 }
 
-.text1,.text2,.text3,.text4,.text5,.text6
-{
-display:flex;
-margin: 31px auto;font-size: 13px; font-weight: lighter; text-align: center;
+/*Texty*/
 
-
-
+.text{
+    display:flex;
+    margin: 31px auto;
+    font-size: 13px; 
+    font-weight: lighter; 
+    text-align: center;
 }
+
+/* Queries tablet*/
+
 @media screen  and (min-width: 640px){
-    .kancelar,.delegati {
+.kancelar,.delegati {
         width: 72%;
     }
+/* Sekce tlačítka */
 
-    
 .tlacitka {
    
     display: grid;
     grid-template-columns: 19% 24% 29% ;
-    
     gap: 0 3%;
-    
-   
 }
-/* Pozadí,písmo,nadpis */
 
-
-   .dobrodruzstvi {
+ .dobrodruzstvi {
     margin: 0;
     grid-column:  2/3 ;
-    
-
-  
- 
    }
   
    
-   .pohoda {
+ .pohoda {
     margin: 0;
     grid-column:3/4
     
     }
- 
-  
-   
-  
 
+/* Sekce boxy*/
 
 .boxy1,.boxy2{
-    display: flex;
-  justify-content: space-around;  
+     display: flex;
+     justify-content: space-between;  
 
 }   
-.box1, .box2,.box3,.box4,.box5,.box6,.box7 {
+.box {
     flex:0 0 calc((100%-18px)/3);
     min-width: 30%;
     flex-direction: column;
+    height: auto;
     
 }
-.mapa, .kaktus,.palma,.letadlo,.slunecnik, .karavan {
+.ikony {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 5px;
     
    
 }
-.text1,.text2,.text3,.text4,.text7 {
+.text{
     margin: 20px 16px;
    
 }
 
   
 }
-   
+   /* Queries pc*/
+
    @media screen  and (min-width: 1100px){
-    .kontejner{
+
+    /* Kontejner*/
+.kontejner{
         
-        display: flex;
-        flex-wrap:wrap ;
-        padding:60px 80px;
-    
+    display: flex;
+    flex-wrap:wrap ;
+    padding:60px 80px;
     }
+
+    /* Sekce Travels*/
+
 .Travels{
     margin-top:133px ;
     
@@ -222,37 +211,66 @@ margin: 31px auto;font-size: 13px; font-weight: lighter; text-align: center;
     text-align: left;
 }
 
+/* Sekce tlačítka*/
+
+.tlacitka {
+    display: flex;
+
+  }
 .dobrodruzstvi {
     width:auto;
-   
-    
-
-  
- 
-   }
-  .tlacitka {
-    display: flex;
-  }
-   
-   .pohoda {
-   width:auto ;
-    
+    margin: auto;
+    margin-right: 0;
+   }   
+.pohoda {
+   width:auto ; 
+   margin: auto; 
+   margin-left: 0;
     }
+
+/* Hlavní obrázek*/
+
 .cestovatel {
-    flex:1 1 30%;
+    flex:1 1 35%;
     order: 2;
-    width: 35%;
+    width: 20%;
     height: auto;
     padding: 0;
     margin-top: 60px;
+    margin-left: 94px;
 
 }
+
+/* Sekce boxy1*/
+
 .boxy1 {
     flex:1 1 50%;
     order: 3;
     margin-top: 147px;
    
 }
+
+/* Sekce boxy2*/
+
+.boxy2 {
+    flex:1 1 50%;
+    order: 6; 
+    margin-top: 80px;
+}
+.box {
+    flex: 0 0 calc(50%/3);
+     margin-right: 20px;
+    }
+.img {
+    margin: 40px auto;
+    
+}
+.text {
+    margin-bottom: 40px;
+}
+
+/* Sekce popis služeb*/
+
 .kancelar {
     flex:1 1 30%;
     order: 4;
@@ -260,18 +278,19 @@ margin: 31px auto;font-size: 13px; font-weight: lighter; text-align: center;
     margin-left: 40px;
     
 }
-.delegati { flex:1 1 30%;
+.delegati { 
+    flex:1 1 30%;
     order: 5;
     text-align: left;
     margin-right: 40px;
     margin-top: 119px;
+   
 }
-h2 {margin:0;}
-.boxy2 {
-    flex:1 1 50%;
-    order: 6; 
-}
-.box1, .box2,.box3,.box4,.box5,.box6,.box7 {
-margin-right: 20px;
+
+/* Nadpisy*/
+
+h2 {
+    margin:0;}
+
    }
-  }
+  
