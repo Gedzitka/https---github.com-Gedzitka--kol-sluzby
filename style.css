@@ -165,15 +165,15 @@ h2 {
 
 .boxy1,.boxy2{
      display: flex;
-     justify-content: space-between;  
+     gap: 20px;
+
 
 }   
 .box {
-    flex:0 0 calc((100%-18px)/3);
+ 
+    height: auto;
     min-width: 30%;
     flex-direction: column;
-    height: auto;
-    
 }
 .ikony {
     margin: auto;
@@ -205,7 +205,6 @@ h2 {
 
 .Travels{
     margin-top:133px ;
-    
     flex: 0 1 50%;
     order: 1;
     text-align: left;
@@ -215,17 +214,18 @@ h2 {
 
 .tlacitka {
     display: flex;
-
   }
 .dobrodruzstvi {
     width:auto;
     margin: auto;
     margin-right: 0;
+   
    }   
 .pohoda {
    width:auto ; 
    margin: auto; 
-   margin-left: 0;
+   margin-left:0 ;
+   
     }
 
 /* Hlavní obrázek*/
@@ -247,6 +247,7 @@ h2 {
     flex:1 1 50%;
     order: 3;
     margin-top: 147px;
+    gap:20px;
    
 }
 
@@ -256,10 +257,11 @@ h2 {
     flex:1 1 50%;
     order: 6; 
     margin-top: 80px;
+    gap: 20px;
 }
 .box {
     flex: 0 0 calc(50%/3);
-     margin-right: 20px;
+     
     }
 .img {
     margin: 40px auto;
