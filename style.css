@@ -228,11 +228,12 @@ h2 {
     justify-content: left;
     gap:20px;
     text-align: left;
+    margin:0;
   }
 .dobrodruzstvi {
     margin: 0;
-   flex: 0 1 40%;
-   height: auto ;
+    flex: 0 1 40%;
+    height: auto ;
    
    }   
 .pohoda {
